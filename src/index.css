@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Hero-bg: rgb(233, 247, 234);
+  --Button-color: rgb(255, 92, 0);
+  --footer-bg: rgb(56, 79, 70);
+  --product-bg: rgb(244, 243, 241);
+  --text-color: rgb(39, 41, 39);
+  --order-color: rgb(49, 113, 84);
+  --colorText: rgb(245, 177, 2);
+}
