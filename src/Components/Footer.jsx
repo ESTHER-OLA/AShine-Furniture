@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import iconFB from "../assets/images/Group 1064.svg";
-import iconIG from "../assets/images/Group 1062.svg";
-import iconWhspp from "../assets/images/logos_whatsapp-icon.png";
+import iconFB from "../assets/IMAGES/Group 1064.svg";
+import iconIG from "../assets/IMAGES/Group 1062.svg";
+import iconWhspp from "../assets/IMAGES/logos_whatsapp-icon.png";
 
 const Footer = () => {
   const [activeLink, setActiveLink] = useState("");

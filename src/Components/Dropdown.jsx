@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import dropdownIcon from "../../assets/images/drowdown-arrow.png";
+import dropdownIcon from "../assets/IMAGES/drowdown-arrow.png";
 
 const Dropdown = ({ selected, setSelected }) => {
   const [isActive, setIsActive] = useState(false);

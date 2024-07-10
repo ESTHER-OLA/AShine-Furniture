@@ -1,10 +1,23 @@
-import React, { useState } from "react";
-import cart from "../assets/images/Group.svg";
+import React, { useState, useEffect } from "react";
+import cart from "../assets/IMAGES/Group.svg";
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { toggleStatusTab } from "../stores/cart";
 
-const Navbar = () => {
+const Header = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("");
+  const [totalQuantity, setTotalQuantity] = useState(0);
+  const carts = useSelector((store) => store.cart.items);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    let total = 0;
+    carts.forEach((item) => (total += item.quantity));
+    setTotalQuantity(total);
+  }, [carts]);
+  const handleOpenTabCart = () => {
+    dispatch(toggleStatusTab());
+  };
 
   const showSidebar = () => {
     setSidebarOpen(true);
@@ -40,15 +53,17 @@ const Navbar = () => {
               </svg>
             </a>
           </li>
-          <li>
-            <a
-              href="#product"
-              className={activeLink === "product" ? "active" : ""}
-              onClick={() => setActiveLink("product")}
-            >
-              Product
-            </a>
-          </li>
+          <Link to="/">
+            <li>
+              <a
+                href="#product"
+                className={activeLink === "product" ? "active" : ""}
+                onClick={() => setActiveLink("product")}
+              >
+                Product
+              </a>
+            </li>
+          </Link>
           <li>
             <a
               href="#followMe"
@@ -71,13 +86,15 @@ const Navbar = () => {
 
         <ul className="navlist">
           <li className="hideOnMobile">
-            <a
+            <Link
+              to="/"
               href="#product"
               className={activeLink === "product" ? "active" : ""}
               onClick={() => setActiveLink("product")}
             >
+              {" "}
               Product
-            </a>
+            </Link>
           </li>
           <li className="hideOnMobile">
             <a
@@ -98,8 +115,9 @@ const Navbar = () => {
             </a>
           </li>
           <li className="cart-img">
-            <Link to="/cart">
-              <img src={cart} alt="" />
+            <span className="total-num">{totalQuantity}</span>
+            <Link to="/CartTab">
+              <img src={cart} alt="" onClick={handleOpenTabCart} />
             </Link>
           </li>
           <li className="menu-button" onClick={showSidebar}>
@@ -123,4 +141,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

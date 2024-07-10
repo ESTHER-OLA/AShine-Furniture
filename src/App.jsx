@@ -1,20 +1,21 @@
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
-import Pages from "./Components/Pages/pages";
 import "./App.css";
-
-const App = () => {
+import Layout from "./Components/Layout";
+import Home from "./Pages/Home";
+import Detail from "./Pages/Detail";
+import CartTab from "./Components/CartTab";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Navbar />
-        <Pages />
-        <Footer />
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/:slug" element={<Detail />} />
+          <Route path="/carttab" element={<CartTab />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
-};
+}
 
 export default App;

@@ -1,13 +1,14 @@
 import React from "react";
-import soferSet from "../../assets/images/interior-design.png";
-import ProductGrid from "./productGrid";
+import soferSet from "../assets/IMAGES/interior-design.png";
 
-const Product = () => {
+const HeroPage = () => {
   return (
-    <div>
-      <section className="hero" id="#">
+    <div className="">
+      <section className="hero" id="">
         <div className="hero-text">
-          <h1>Transform Your Space with Timeless Elegance</h1>
+          <h1 className="textHead">
+            Transform Your Space with Timeless Elegance
+          </h1>
           <p>
             Discover our exquisite range of modern and classic furniture to
             transform your home. From chic sofas to elegant dining sets, find
@@ -25,11 +26,8 @@ const Product = () => {
           </div>
         </div>
       </section>
-      <section id="product">
-        <ProductGrid />
-      </section>
     </div>
   );
 };
 
-export default Product;
+export default HeroPage;
