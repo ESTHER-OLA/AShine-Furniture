@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import star from "../assets/IMAGES/Group 1045.png";
+import star from "../assets/images/Group 1045.png";
 import { products } from "../Product";
 import { useDispatch } from "react-redux";
 import { changeQuantity } from "../stores/cart";

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleStatusTab } from "../stores/cart";
 import CartItem from "./CartItem";
-import cartImage from "../assets/IMAGES/Group.svg";
+import cartImage from "../assets/images/Group.svg";
 
 const CartTab = () => {
   const [totalQuantity, setTotalQuantity] = useState(0);

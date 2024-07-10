@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../stores/cart";
-import star from "../assets/IMAGES/Group 1045.png";
-import itemContact from "../assets/IMAGES/Buttons (primay,secondary, small).png";
-import whatsappIcon from "../assets/IMAGES/logos_whatsapp-icon.png";
-import iconCart from "../assets/IMAGES/icon.png";
+import star from "../assets/images/Group 1045.png";
+import itemContact from "../assets/images/Buttons (primay,secondary, small).png";
+import whatsappIcon from "../assets/images/logos_whatsapp-icon.png";
+import iconCart from "../assets/images/icon.png";
 
 const ProductCart = (props) => {
   const carts = useSelector((store) => store.cart.items);

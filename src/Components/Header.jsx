@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import cart from "../assets/IMAGES/Group.svg";
+import cart from "../assets/images/Group.svg";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleStatusTab } from "../stores/cart";

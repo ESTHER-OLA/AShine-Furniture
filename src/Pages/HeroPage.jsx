@@ -1,5 +1,5 @@
 import React from "react";
-import soferSet from "../assets/IMAGES/interior-design.png";
+import soferSet from "../assets/images/interior-design.png";
 
 const HeroPage = () => {
   return (

@@ -1,15 +1,15 @@
-import imageProduct1 from "./assets/IMAGES/Rectangle 98.png";
-import imageProduct2 from "./assets/IMAGES/Rectangle 99.png";
-import imageProduct3 from "./assets/IMAGES/Rectangle 100.png";
-import imageProduct4 from "./assets/IMAGES/Rectangle 101.png";
-import imageProduct5 from "./assets/IMAGES/Rectangle 102.png";
-import imageProduct6 from "./assets/IMAGES/Rectangle 103.png";
-import imageProduct7 from "./assets/IMAGES/Rectangle 104.png";
-import imageProduct8 from "./assets/IMAGES/Rectangle 105.png";
-import imageProduct9 from "./assets/IMAGES/Rectangle 106.png";
-import imageProduct10 from "./assets/IMAGES/Rectangle 107.png";
-import imageProduct11 from "./assets/IMAGES/Rectangle 98.png";
-import imageProduct12 from "./assets/IMAGES/Rectangle 98.png";
+import imageProduct1 from "./assets/images/Rectangle 98.png";
+import imageProduct2 from "./assets/images/Rectangle 99.png";
+import imageProduct3 from "./assets/images/Rectangle 100.png";
+import imageProduct4 from "./assets/images/Rectangle 101.png";
+import imageProduct5 from "./assets/images/Rectangle 102.png";
+import imageProduct6 from "./assets/images/Rectangle 103.png";
+import imageProduct7 from "./assets/images/Rectangle 104.png";
+import imageProduct8 from "./assets/images/Rectangle 105.png";
+import imageProduct9 from "./assets/images/Rectangle 106.png";
+import imageProduct10 from "./assets/images/Rectangle 107.png";
+import imageProduct11 from "./assets/images/Rectangle 98.png";
+import imageProduct12 from "./assets/images/Rectangle 98.png";
 
 export const products = [
   {
