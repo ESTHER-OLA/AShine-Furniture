@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { products } from "../Product";
 import ProductCart from "../Components/ProductCart";
 import HeroPage from "./HeroPage";
@@ -6,6 +6,19 @@ import Dropdown from "../Components/Dropdown";
 
 const Home = () => {
   const [selected, setSelected] = useState("");
+  const [filteredProducts, setFilteredProducts] = useState(products);
+
+  useEffect(() => {
+    if (selected === "All") {
+      setFilteredProducts(products);
+    } else {
+      const filtered = products.filter((product) =>
+        product.name.toLowerCase().includes(selected.toLowerCase())
+      );
+      setFilteredProducts(filtered);
+    }
+  }, [selected]);
+
   return (
     <div>
       <HeroPage />
@@ -18,16 +31,20 @@ const Home = () => {
             <h5> Show</h5>
             <div>
               <ul>
-                <ol className="">12</ol>
-                <ol className="">18</ol>
-                <ol className="">24</ol>
+                <li className="">12</li>
+                <li className="">18</li>
+                <li className="">24</li>
               </ul>
             </div>
           </div>
           <div className="gridItems">
-            {products.map((product, key) => (
-              <ProductCart key={key} data={product} />
-            ))}
+            {filteredProducts.length > 0 ? (
+              filteredProducts.map((product, key) => (
+                <ProductCart key={key} data={product} />
+              ))
+            ) : (
+              <div className="no-products-found">No products found</div>
+            )}
           </div>
         </div>
       </div>
@@ -36,14 +53,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// const filteredItems =
-//   selected === "All"
-//     ? gridItems.slice(0, numItemsToShow)
-//     : gridItems
-//         .filter(
-//           (item) =>
-//             item.title.toLowerCase().includes(selected.toLowerCase()) ||
-//             item.category === selected
-//         )
-//         .slice(0, numItemsToShow);
