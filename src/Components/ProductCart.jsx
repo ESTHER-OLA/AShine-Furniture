@@ -21,7 +21,9 @@ const ProductCart = (props) => {
   };
 
   const handleContactMeClick = () => {
-    window.location.href = "https://wa.me/+234 8165 5735 27";
+    const phoneNumber = "+2348165573527";
+    const whatsappUrl = `https://wa.me/${phoneNumber}`;
+    window.open(whatsappUrl, "_blank");
   };
   return (
     <div className="items">

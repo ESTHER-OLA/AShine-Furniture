@@ -28,10 +28,9 @@ const Header = () => {
   };
 
   const handleContactMeClick = () => {
-    // Replace this with your actual WhatsApp link
-    window.location.href = "https://wa.me/+234 8165 5735 27";
-    setActiveLink("contactMe");
-    hideSidebar(); // Optionally close sidebar when navigating
+    const phoneNumber = "+2348165573527";
+    const whatsappUrl = `https://wa.me/${phoneNumber}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
