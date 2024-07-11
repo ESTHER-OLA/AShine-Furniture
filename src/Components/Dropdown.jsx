@@ -4,7 +4,7 @@ import dropdownIcon from "../assets/images/drowdown-arrow.png";
 
 const Dropdown = ({ selected, setSelected }) => {
   const [isActive, setIsActive] = useState(false);
-  const options = ["All", "Bed", "Sofa", "Dinning Chairs", "Work Space Desks"];
+  const options = ["All", "Bed", "Sofa", "Drawer", "Chair", "Center Table"];
 
   return (
     <div className="dropdown">

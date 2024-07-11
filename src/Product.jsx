@@ -32,7 +32,7 @@ export const products = [
   },
   {
     id: 3,
-    name: "EAMES DESIGNED EIFFEL DSR PLASTIC CHAIR WHITE",
+    name: "Eames Designed Eiffel DSR WorkSpace Plastic Chair White",
     price: "#76,000",
     image: imageProduct3,
     description:
@@ -59,7 +59,7 @@ export const products = [
   },
   {
     id: 6,
-    name: "Modern Homely Center Table - Coffee Table Home Furniture",
+    name: "Home Sofa Q Cover Seater Stretch Elastic Chair Sofa",
     price: "#285,000",
     image: imageProduct6,
     description:
@@ -86,7 +86,7 @@ export const products = [
   },
   {
     id: 9,
-    name: "Accent Sweet Home Ottoman And Footstool Nationwide Delivery",
+    name: "Accent Sweet Home Center Table And Footstool Nationwide Delivery",
     price: "#285,000",
     image: imageProduct9,
     description:
@@ -95,7 +95,7 @@ export const products = [
   },
   {
     id: 10,
-    name: "Modern Homely Center Table - Coffee Table Home Furniture",
+    name: "Modern Homely Bed - Bedroom Home Furniture",
     price: "#285,000",
     image: imageProduct10,
     description:

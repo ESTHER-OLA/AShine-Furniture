@@ -722,3 +722,7 @@ h7 {
   border: 2px solid var(--Button-color);
   border-radius: 5px;
 }
+
+.filter-Num ul li.active {
+  color: var(--Button-color);
+}
