@@ -40,7 +40,7 @@ const ProductCart = (props) => {
         <h5>{name}</h5>
         <div className="flex-items">
           <div className="price">
-            $<span className="text-2xl font-medium">{price}</span>
+            <span className="text-2xl font-medium">${price}</span>
             <span>
               <img src={star} alt="" />
             </span>
@@ -50,7 +50,6 @@ const ProductCart = (props) => {
               <img src={itemContact} alt="" style={{ cursor: "pointer" }} />
             </a>
 
-            {/* WhatsApp Icon and onClick */}
             <a href="#contactMe" onClick={handleContactMeClick}>
               <img
                 src={whatsappIcon}

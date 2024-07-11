@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { toggleStatusTab } from "../stores/cart";
 import CartItem from "./CartItem";
 import cartImage from "../assets/images/Group.svg";
+import { Link } from "react-router-dom";
 
 const CartTab = () => {
   const [totalQuantity, setTotalQuantity] = useState(0);
@@ -63,7 +64,10 @@ const CartTab = () => {
               <button>Proceed to Payment</button>
             </div>
             <div className="btnCart-white">
-              <button>Continue Shopping</button>
+              <Link to="/product">
+                {" "}
+                <button>Continue Shopping</button>
+              </Link>
             </div>
           </div>
         </div>

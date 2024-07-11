@@ -581,6 +581,7 @@ h7 {
   gap: 10px;
   justify-content: left;
   align-items: left;
+  margin-bottom: 25px;
 }
 
 .gridCartText {

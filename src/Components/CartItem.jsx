@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import star from "../assets/images/Group 1045.png";
 import { products } from "../Product";
 import { useDispatch } from "react-redux";
@@ -62,3 +63,11 @@ const CartItem = (props) => {
 };
 
 export default CartItem;
+
+// Define PropTypes for CartItem component
+CartItem.propTypes = {
+  data: PropTypes.shape({
+    productId: PropTypes.number.isRequired,
+    quantity: PropTypes.number.isRequired,
+  }).isRequired,
+};
