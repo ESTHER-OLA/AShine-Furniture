@@ -42,7 +42,7 @@ const CartItem = (props) => {
         <div className="gridCartText">
           <div className="colText">
             <h3>{detail.name}</h3>
-            <p>{detail.price}</p>
+            <p>${detail.price * quantity}</p>
           </div>
           <div>
             <img src={star} alt="" />
