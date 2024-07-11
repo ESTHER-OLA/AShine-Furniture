@@ -9,12 +9,14 @@ const CartItem = (props) => {
   const { productId, quantity } = props.data;
   const [detail, setDetail] = useState([]);
   const dispatch = useDispatch();
+
   useEffect(() => {
     const findDetail = products.filter(
       (product) => product.id === productId
     )[0];
     setDetail(findDetail);
   }, [productId]);
+
   const handleMinusQuantity = () => {
     dispatch(
       changeQuantity({
@@ -40,7 +42,7 @@ const CartItem = (props) => {
         <div className="gridCartText">
           <div className="colText">
             <h3>{detail.name}</h3>
-            {/* <p>${detail.price * quantity}</p> */}
+            <p>{detail.price}</p>
           </div>
           <div>
             <img src={star} alt="" />
